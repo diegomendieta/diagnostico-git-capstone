@@ -1,3 +1,9 @@
+def get_days_with_more_tweets(df, n):
+    top_n_users = df['date'].value_counts()[:n]
+    for username, count in zip(top_n_users.index, top_n_users):
+        print(f"{(username + ':').ljust(15)}{count}")
+
+
 # https://stackoverflow.com/questions/2527892/parsing-a-tweet-to-extract-hashtags-into-an-array
 def extract_hashtags(s):
     return [part.split('#')[1] for part in s.split() if part.startswith('#')]
