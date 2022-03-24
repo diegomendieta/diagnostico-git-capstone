@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Pdfs
+*.pdf
+
+# Database
+farmers-protest-tweets-2021-03-5.json
+
 # Distribution / packaging
 .Python
 build/
